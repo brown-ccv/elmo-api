@@ -1,0 +1,36 @@
+{
+  "name": "elmo-api",
+  "version": "0.0.1",
+  "description": "Proxy API for processing and serving ELMO data",
+  "main": "app/server.js",
+  "author": "Fernando Gelin, Mary McGrath",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app/server.js",
+    "dev": "nodemon app/server.js",
+    "test": "mocha",
+    "jsdoc": "jsdoc app/server.js",
+    "swagger": "swagger-jsdoc -d app/swaggerDef.js app/routes/content.js",
+    "prettify": "prettier --write app"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.13.0",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.2.0"
+  },
+  "dependencies": {
+    "arquero": "^1.0.0",
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "swagger-jsdoc": "^5.0.1",
+    "swagger-ui-express": "^4.1.5"
+  }
+}
